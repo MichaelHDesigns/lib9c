@@ -29,14 +29,14 @@ namespace Nekoyume
 
         //TODO 안쓰는 프리팹과 함께 삭제해야함
         public const int CombineEquipmentCostAP = 5;
-        public const int CombineEquipmentCostNCG = 10;
+        public const int CombineEquipmentCostSCN = 10;
         public const int EnhanceEquipmentCostAP = 0;
 
         public const int RankingRewardFirst = 50;
         public const int RankingRewardSecond = 30;
         public const int RankingRewardThird = 10;
 
-        public const int ArenaActivationCostNCG = 100;
+        public const int ArenaActivationCostSCN = 100;
         public const int ArenaScoreDefault = 1000;
         public const int ArenaChallengeCountMax = 5;
 
