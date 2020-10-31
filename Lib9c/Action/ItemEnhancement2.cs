@@ -120,7 +120,7 @@ namespace Nekoyume.Action
             }
 
             var enhancementCostSheet = states.GetSheet<EnhancementCostSheet>();
-            var requiredNCG = ItemEnhancement.GetRequiredNCG(enhancementCostSheet, enhancementEquipment.Grade, enhancementEquipment.level + 1);
+            var requiredSCN = ItemEnhancement.GetRequiredSCN(enhancementCostSheet, enhancementEquipment.Grade, enhancementEquipment.level + 1);
 
             avatarState.actionPoint -= requiredAP;
             result.actionPoint = requiredAP;
