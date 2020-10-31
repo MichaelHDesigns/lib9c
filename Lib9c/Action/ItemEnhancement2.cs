@@ -125,12 +125,12 @@ namespace Nekoyume.Action
             avatarState.actionPoint -= requiredAP;
             result.actionPoint = requiredAP;
 
-            if (requiredNCG > 0)
+            if (requiredSCN > 0)
             {
                 states = states.TransferAsset(
                     ctx.Signer,
                     BlacksmithAddress,
-                    states.GetGoldCurrency() * requiredNCG
+                    states.GetGoldCurrency() * requiredSCN
                 );
             }
 
