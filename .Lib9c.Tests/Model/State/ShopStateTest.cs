@@ -28,7 +28,7 @@ namespace Lib9c.Tests.Model.State
                 weaponRow,
                 Guid.NewGuid(),
                 0);
-            var price = new FungibleAssetValue(new Currency("NCG", 2, minter: null));
+            var price = new FungibleAssetValue(new Currency("SCN", 2, minter: null));
             var shopItem = new ShopItem(
                 agentAddress,
                 avatarAddress,
@@ -62,7 +62,7 @@ namespace Lib9c.Tests.Model.State
                 weaponRow,
                 Guid.NewGuid(),
                 0);
-            var price = new FungibleAssetValue(new Currency("NCG", 2, minter: null));
+            var price = new FungibleAssetValue(new Currency("SCN", 2, minter: null));
             var shopItem = new ShopItem(
                 agentAddress,
                 avatarAddress,
@@ -94,7 +94,7 @@ namespace Lib9c.Tests.Model.State
                 weaponRow,
                 Guid.NewGuid(),
                 0);
-            var price = new FungibleAssetValue(new Currency("NCG", 2, minter: null));
+            var price = new FungibleAssetValue(new Currency("SCN", 2, minter: null));
             var shopItem = new ShopItem(
                 agentAddress,
                 avatarAddress,
@@ -124,7 +124,7 @@ namespace Lib9c.Tests.Model.State
                 weaponRow,
                 Guid.NewGuid(),
                 0);
-            var price = new FungibleAssetValue(new Currency("NCG", 2, minter: null));
+            var price = new FungibleAssetValue(new Currency("SCN", 2, minter: null));
             var shopItem = new ShopItem(
                 agentAddress,
                 avatarAddress,
@@ -158,7 +158,7 @@ namespace Lib9c.Tests.Model.State
                 weaponRow,
                 Guid.NewGuid(),
                 0);
-            var price = new FungibleAssetValue(new Currency("NCG", 2, minter: null));
+            var price = new FungibleAssetValue(new Currency("SCN", 2, minter: null));
             var shopItem = new ShopItem(
                 agentAddress,
                 avatarAddress,
@@ -196,7 +196,7 @@ namespace Lib9c.Tests.Model.State
                 weaponRow,
                 Guid.NewGuid(),
                 0);
-            var price = new FungibleAssetValue(new Currency("NCG", 2, minter: null));
+            var price = new FungibleAssetValue(new Currency("SCN", 2, minter: null));
             var shopItem = new ShopItem(
                 agentAddress,
                 avatarAddress,
