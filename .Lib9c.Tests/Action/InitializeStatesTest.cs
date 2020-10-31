@@ -32,7 +32,7 @@ namespace Lib9c.Tests.Action
             var goldDistributionCsvPath = GoldDistributionTest.CreateFixtureCsvFile();
             var goldDistributions = GoldDistribution.LoadInDescendingEndBlockOrder(goldDistributionCsvPath);
             var minterKey = new PrivateKey();
-            var ncg = new Currency("NCG", 2, minterKey.ToAddress());
+            var scn = new Currency("SCN", 2, minterKey.ToAddress());
             var nonce = new byte[] { 0x00, 0x01, 0x02, 0x03 };
             var privateKey = new PrivateKey();
             (ActivationKey activationKey, PendingActivationState pendingActivation) =
@@ -49,7 +49,7 @@ namespace Lib9c.Tests.Action
                     1500000
                 ),
                 activatedAccountsState: new ActivatedAccountsState(),
-                goldCurrencyState: new GoldCurrencyState(ncg),
+                goldCurrencyState: new GoldCurrencyState(scn),
                 goldDistributions: goldDistributions,
                 pendingActivationStates: new[] { pendingActivation }
             );
@@ -90,7 +90,7 @@ namespace Lib9c.Tests.Action
             var goldDistributionCsvPath = GoldDistributionTest.CreateFixtureCsvFile();
             var goldDistributions = GoldDistribution.LoadInDescendingEndBlockOrder(goldDistributionCsvPath);
             var minterKey = new PrivateKey();
-            var ncg = new Currency("NCG", 2, minterKey.ToAddress());
+            var scn = new Currency("SCN", 2, minterKey.ToAddress());
             var nonce = new byte[] { 0x00, 0x01, 0x02, 0x03 };
             var privateKey = new PrivateKey();
             (ActivationKey activationKey, PendingActivationState pendingActivation) =
@@ -107,7 +107,7 @@ namespace Lib9c.Tests.Action
                     1500000
                 ),
                 activatedAccountsState: new ActivatedAccountsState(),
-                goldCurrencyState: new GoldCurrencyState(ncg),
+                goldCurrencyState: new GoldCurrencyState(scn),
                 goldDistributions: goldDistributions,
                 pendingActivationStates: new[] { pendingActivation },
                 authorizedMinersState: new AuthorizedMinersState(
@@ -142,7 +142,7 @@ namespace Lib9c.Tests.Action
             var goldDistributionCsvPath = GoldDistributionTest.CreateFixtureCsvFile();
             var goldDistributions = GoldDistribution.LoadInDescendingEndBlockOrder(goldDistributionCsvPath);
             var minterKey = new PrivateKey();
-            var ncg = new Currency("NCG", 2, minterKey.ToAddress());
+            var scn = new Currency("SCN", 2, minterKey.ToAddress());
             var nonce = new byte[] { 0x00, 0x01, 0x02, 0x03 };
             var privateKey = new PrivateKey();
             (ActivationKey activationKey, PendingActivationState pendingActivation) =
@@ -157,7 +157,7 @@ namespace Lib9c.Tests.Action
                 redeemCodeState: new RedeemCodeState(redeemCodeListSheet),
                 adminAddressState: new AdminState(adminAddress, 1500000),
                 activatedAccountsState: new ActivatedAccountsState(ImmutableHashSet<Address>.Empty.Add(adminAddress)),
-                goldCurrencyState: new GoldCurrencyState(ncg),
+                goldCurrencyState: new GoldCurrencyState(scn),
                 goldDistributions: goldDistributions,
                 pendingActivationStates: new[] { pendingActivation }
             );
@@ -184,7 +184,7 @@ namespace Lib9c.Tests.Action
             var goldDistributionCsvPath = GoldDistributionTest.CreateFixtureCsvFile();
             var goldDistributions = GoldDistribution.LoadInDescendingEndBlockOrder(goldDistributionCsvPath);
             var minterKey = new PrivateKey();
-            var ncg = new Currency("NCG", 2, minterKey.ToAddress());
+            var scn = new Currency("SCN", 2, minterKey.ToAddress());
             var nonce = new byte[] { 0x00, 0x01, 0x02, 0x03 };
             var adminAddress = new Address("F9A15F870701268Bd7bBeA6502eB15F4997f32f9");
             var creditState = new CreditsState(
@@ -204,7 +204,7 @@ namespace Lib9c.Tests.Action
                 redeemCodeState: new RedeemCodeState(redeemCodeListSheet),
                 adminAddressState: new AdminState(adminAddress, 1500000),
                 activatedAccountsState: new ActivatedAccountsState(ImmutableHashSet<Address>.Empty.Add(adminAddress)),
-                goldCurrencyState: new GoldCurrencyState(ncg),
+                goldCurrencyState: new GoldCurrencyState(scn),
                 goldDistributions: goldDistributions,
                 pendingActivationStates: new PendingActivationState[0],
                 creditsState: creditState
