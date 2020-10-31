@@ -159,17 +159,17 @@ namespace Nekoyume.Action
             }
 
             var enhancementCostSheet = states.GetSheet<EnhancementCostSheet>();
-            var requiredNCG = GetRequiredNCG(enhancementCostSheet, enhancementEquipment.Grade, enhancementEquipment.level + 1);
+            var requiredSCN = GetRequiredSCN(enhancementCostSheet, enhancementEquipment.Grade, enhancementEquipment.level + 1);
 
             avatarState.actionPoint -= requiredAP;
             result.actionPoint = requiredAP;
 
-            if (requiredNCG > 0)
+            if (requiredSCN > 0)
             {
                 states = states.TransferAsset(
                     ctx.Signer,
                     BlacksmithAddress,
-                    states.GetGoldCurrency() * requiredNCG
+                    states.GetGoldCurrency() * requiredSCN
                 );
             }
 
@@ -318,7 +318,7 @@ namespace Nekoyume.Action
             }
         }
 
-        public static BigInteger GetRequiredNCG(EnhancementCostSheet costSheet, int grade, int level)
+        public static BigInteger GetRequiredSCN(EnhancementCostSheet costSheet, int grade, int level)
         {
             var row = costSheet
                 .OrderedList
