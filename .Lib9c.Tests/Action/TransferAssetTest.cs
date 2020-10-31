@@ -32,7 +32,7 @@ namespace Lib9c.Tests.Action
             }
         );
 
-        private static readonly Currency _currency = new Currency("NCG", 2, default(Address?));
+        private static readonly Currency _currency = new Currency("SCN", 2, default(Address?));
 
         [Fact]
         public void Execute()
