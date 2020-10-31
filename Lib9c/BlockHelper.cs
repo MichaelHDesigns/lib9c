@@ -42,7 +42,7 @@ namespace Nekoyume
                 privateKey = new PrivateKey();
             }
 
-            var ncg = new Currency("NCG", 2, privateKey.ToAddress());
+            var scn = new Currency("SCN", 2, privateKey.ToAddress());
             activatedAccounts = activatedAccounts ?? ImmutableHashSet<Address>.Empty;
             var initialStatesAction = new InitializeStates
             (
@@ -56,7 +56,7 @@ namespace Nekoyume
                     isActivateAdminAddress
                     ? activatedAccounts.Add(adminState.AdminAddress)
                     : activatedAccounts),
-                goldCurrencyState: new GoldCurrencyState(ncg),
+                goldCurrencyState: new GoldCurrencyState(scn),
                 goldDistributions: goldDistributions,
                 pendingActivationStates: pendingActivationStates,
                 authorizedMinersState: authorizedMinersState,
