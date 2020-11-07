@@ -42,7 +42,7 @@ namespace Lib9c.Tests.Action
                 default
             );
 
-            var gold = new GoldCurrencyState(new Currency("NCG", 2, minter: null));
+            var gold = new GoldCurrencyState(new Currency("SCN", 2, minter: null));
             _baseState = (State)new State()
                 .SetState(GoldCurrencyState.Address, gold.Serialize())
                 .SetState(Addresses.GoldDistribution, GoldDistributionTest.Fixture.Select(v => v.Serialize()).Serialize())
@@ -140,7 +140,7 @@ namespace Lib9c.Tests.Action
         [Fact]
         public void GoldDistributedEachAccount()
         {
-            Currency currency = new Currency("NCG", 2, minters: null);
+            Currency currency = new Currency("SCN", 2, minters: null);
             Address fund = GoldCurrencyState.Address;
             Address address1 = new Address("F9A15F870701268Bd7bBeA6502eB15F4997f32f9");
             Address address2 = new Address("Fb90278C67f9b266eA309E6AE8463042f5461449");
