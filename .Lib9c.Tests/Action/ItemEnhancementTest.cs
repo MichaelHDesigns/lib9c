@@ -48,7 +48,7 @@ namespace Lib9c.Tests.Action
 
             agentState.avatarAddresses.Add(0, _avatarAddress);
 
-            _currency = new Currency("NCG", 2, minter: null);
+            _currency = new Currency("SCN", 2, minter: null);
             var gold = new GoldCurrencyState(_currency);
             _slotAddress =
                 _avatarAddress.Derive(string.Format(CultureInfo.InvariantCulture, CombinationSlotState.DeriveFormat, 0));
@@ -486,7 +486,7 @@ namespace Lib9c.Tests.Action
                 slotIndex = 0,
             };
 
-            var gold = new GoldCurrencyState(new Currency("NCG", 2, minter: null));
+            var gold = new GoldCurrencyState(new Currency("SCN", 2, minter: null));
 
             var updatedAddresses = new List<Address>()
             {
