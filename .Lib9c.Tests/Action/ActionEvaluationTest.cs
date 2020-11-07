@@ -13,7 +13,7 @@ namespace Lib9c.Tests.Action
         [Fact]
         public void SerializeWithDotnetAPI()
         {
-            var currency = new Currency("NCG", 2, minters: null);
+            var currency = new Currency("SCN", 2, minters: null);
             var signer = default(Address);
             var blockIndex = 1234;
             var states = new State()
