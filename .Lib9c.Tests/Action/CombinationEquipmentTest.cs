@@ -50,7 +50,7 @@ namespace Lib9c.Tests.Action
                 gameConfigState,
                 default
             );
-            var gold = new GoldCurrencyState(new Currency("NCG", 2, minter: null));
+            var gold = new GoldCurrencyState(new Currency("SCN", 2, minter: null));
 
             _initialState = new State()
                 .SetState(_agentAddress, agentState.Serialize())
