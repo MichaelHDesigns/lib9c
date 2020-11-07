@@ -466,7 +466,7 @@ namespace Lib9c.Tests
                             adminAddressState: new AdminState(adminAddress, 1500000),
                             activatedAccountsState: new ActivatedAccountsState(activatedAddresses),
                             goldCurrencyState: new GoldCurrencyState(
-                                new Currency("NCG", 2, minter: null)
+                                new Currency("SCN", 2, minter: null)
                             ),
                             goldDistributions: new GoldDistribution[0],
                             pendingActivationStates: pendingActivations,
