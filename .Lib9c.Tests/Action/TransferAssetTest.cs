@@ -122,7 +122,7 @@ namespace Lib9c.Tests.Action
         [Fact]
         public void ExecuteWithMinterAsSender()
         {
-            var currencyBySender = new Currency("NCG", 2, _sender);
+            var currencyBySender = new Currency("SCN", 2, _sender);
             var balance = ImmutableDictionary<(Address, Currency), FungibleAssetValue>.Empty
                 .Add((_sender, currencyBySender), _currency * 1000)
                 .Add((_recipient, currencyBySender), _currency * 10);
@@ -153,7 +153,7 @@ namespace Lib9c.Tests.Action
         [Fact]
         public void ExecuteWithMinterAsRecipient()
         {
-            var currencyByRecipient = new Currency("NCG", 2, _sender);
+            var currencyByRecipient = new Currency("SCN", 2, _sender);
             var balance = ImmutableDictionary<(Address, Currency), FungibleAssetValue>.Empty
                 .Add((_sender, currencyByRecipient), _currency * 1000)
                 .Add((_recipient, currencyByRecipient), _currency * 10);
