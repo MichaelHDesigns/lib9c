@@ -41,7 +41,7 @@ namespace Lib9c.Tests.Action
 
             _tableSheets = new TableSheets(sheets);
 
-            _currency = new Currency("NCG", 2, minters: null);
+            _currency = new Currency("SCN", 2, minters: null);
             var goldCurrencyState = new GoldCurrencyState(_currency);
 
             var shopState = new ShopState();
