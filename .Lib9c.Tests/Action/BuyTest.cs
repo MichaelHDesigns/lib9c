@@ -43,7 +43,7 @@ namespace Lib9c.Tests.Action
 
             _tableSheets = new TableSheets(sheets);
 
-            var currency = new Currency("NCG", 2, minters: null);
+            var currency = new Currency("SCN", 2, minters: null);
             _goldCurrencyState = new GoldCurrencyState(currency);
 
             _sellerAgentAddress = new PrivateKey().ToAddress();
