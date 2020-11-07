@@ -38,7 +38,7 @@ namespace Lib9c.Tests.Action
                 name = "test",
             };
 
-            var gold = new GoldCurrencyState(new Currency("NCG", 2, minter: null));
+            var gold = new GoldCurrencyState(new Currency("SCN", 2, minter: null));
             var ranking = new RankingState();
             for (var i = 0; i < RankingState.RankingMapCapacity; i++)
             {
@@ -250,7 +250,7 @@ namespace Lib9c.Tests.Action
                 name = "test",
             };
 
-            var gold = new GoldCurrencyState(new Currency("NCG", 2, minter: null));
+            var gold = new GoldCurrencyState(new Currency("SCN", 2, minter: null));
             var updatedAddresses = new List<Address>()
             {
                 agentAddress,
