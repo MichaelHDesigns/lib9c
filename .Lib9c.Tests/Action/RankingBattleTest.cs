@@ -388,7 +388,7 @@ namespace Lib9c.Tests.Action
                 _weeklyArenaAddress,
                 previousWeeklyArenaState.Serialize());
 
-            var goldCurrency = new Currency("NCG", 2, Addresses.GoldCurrency);
+            var goldCurrency = new Currency("SCN", 2, Addresses.GoldCurrency);
             var previousAgentGoldState = _initialState.GetBalance(
                 _agent1Address,
                 goldCurrency);
